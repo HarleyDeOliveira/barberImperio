@@ -1,0 +1,147 @@
+/* Custom CSS for Barbearia Império */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Hover effects for service cards */
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom button styles */
+.btn-primary {
+    background: linear-gradient(135deg, #C9B067, #B8A055);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #B8A055, #A69044);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(201, 176, 103, 0.3);
+}
+
+/* Header background blur effect */
+header {
+    backdrop-filter: blur(10px);
+    background: rgba(26, 26, 26, 0.95);
+}
+
+/* Logo hover effect */
+.logo-container:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Form focus effects */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(201, 176, 103, 0.3);
+}
+
+/* WhatsApp button pulse animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-btn {
+    animation: pulse 2s infinite;
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Section padding adjustments */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C9B067;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B8A055;
+}
+
+/* Loading animation for images */
+img {
+    transition: opacity 0.3s ease;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .fixed, .whatsapp-btn, header, #mobile-menu {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+}
+

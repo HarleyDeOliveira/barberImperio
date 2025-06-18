@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia Império - Estilo, Elegância e Tradição no Corte Masculino. Localizada na Av. Nossa Senhora dos Remédios, 333. Agende seu horário: (11) 9 6066-8231">
+    <meta name="keywords" content="barbearia, corte masculino, barba, sobrancelha, hidratação capilar, Marcelo Barber Cortes">
+    <meta name="author" content="Barbearia Império">
+    <title>Barbearia Império - Estilo, Elegância e Tradição no Corte Masculino</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#C9B067',
+                        'dark-gold': '#B8A055',
+                        'charcoal': '#1A1A1A',
+                        'light-gray': '#D3D3D3',
+                        'medium-gray': '#808080'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-charcoal">
+    
+    <!-- Header -->
+    <header class="bg-charcoal text-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="img/logo.jpg" alt="Barbearia Império" class="h-12 w-auto rounded">
+                <h1 class="font-serif text-xl font-bold text-gold">Barbearia Império</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#inicio" class="hover:text-gold transition-colors duration-300">Início</a></li>
+                <li><a href="#servicos" class="hover:text-gold transition-colors duration-300">Serviços</a></li>
+                <li><a href="#galeria" class="hover:text-gold transition-colors duration-300">Galeria</a></li>
+                <li><a href="#contato" class="hover:text-gold transition-colors duration-300">Contato</a></li>
+                <li><a href="#agendamento" class="hover:text-gold transition-colors duration-300">Agendamento</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden bg-charcoal border-t border-gold hidden">
+            <ul class="px-4 py-4 space-y-4">
+                <li><a href="#inicio" class="block hover:text-gold transition-colors duration-300">Início</a></li>
+                <li><a href="#servicos" class="block hover:text-gold transition-colors duration-300">Serviços</a></li>
+                <li><a href="#galeria" class="block hover:text-gold transition-colors duration-300">Galeria</a></li>
+                <li><a href="#contato" class="block hover:text-gold transition-colors duration-300">Contato</a></li>
+                <li><a href="#agendamento" class="block hover:text-gold transition-colors duration-300">Agendamento</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-gradient-to-r from-charcoal to-gray-900 text-white pt-24 pb-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-serif text-5xl md:text-6xl font-bold mb-6">
+                <span class="text-gold">Estilo, Elegância</span><br>
+                e Tradição no Corte Masculino
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Bem-vindo à Barbearia Império, onde cada corte é uma obra de arte e cada cliente é tratado como realeza.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#agendamento" class="bg-gold hover:bg-dark-gold text-charcoal font-semibold py-3 px-8 rounded-lg transition-colors duration-300">
+                    Agendar Horário
+                </a>
+                <a href="https://wa.me/5511960668231" target="_blank" class="border-2 border-gold text-gold hover:bg-gold hover:text-charcoal font-semibold py-3 px-8 rounded-lg transition-all duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="font-serif text-4xl font-bold mb-8 text-charcoal">Sobre a Barbearia Império</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    Na Barbearia Império, somos mais do que uma barbearia; somos um santuário de cuidado masculino, onde a tradição encontra a modernidade para realçar a sua melhor versão. Localizada na Av. Nossa Senhora dos Remédios, 333, oferecemos uma experiência de barbearia inigualável.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Com uma equipa de barbeiros experientes e apaixonados, liderada por Marcelo Barber Cortes, garantimos um atendimento de excelência e resultados que superam as expectativas. Cada corte, cada barba e cada tratamento são executados com precisão artística e paixão.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="font-serif text-4xl font-bold text-center mb-12 text-charcoal">Nossos Serviços</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Corte Masculino -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cut text-4xl text-gold mb-4"></i>
+                        <h4 class="font-serif text-xl font-bold mb-2">Corte Masculino</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">Clássico, moderno, degradê, tesoura ou máquina – o corte ideal para o seu estilo.</p>
+                    <div class="text-center">
+                        <span class="text-gold font-semibold">A partir de R$ 35</span>
+                    </div>
+                </div>
+
+                <!-- Barba -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-user-tie text-4xl text-gold mb-4"></i>
+                        <h4 class="font-serif text-xl font-bold mb-2">Barba</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">Modelagem, aparo e hidratação para uma barba impecável e saudável.</p>
+                    <div class="text-center">
+                        <span class="text-gold font-semibold">A partir de R$ 25</span>
+                    </div>
+                </div>
+
+                <!-- Sobrancelha -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-eye text-4xl text-gold mb-4"></i>
+                        <h4 class="font-serif text-xl font-bold mb-2">Sobrancelha</h4>
+                    </div>
+                    <p class="text-gray-600 mb-4">Design e limpeza para realçar o seu olhar.</p>
+                    <div class="text-center">
+                        <span class="text-gold font-semibold">A partir de R$ 15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="font-serif text-4xl font-bold text-center mb-12 text-charcoal">Nosso Espaço</h3>
+            <div class="text-center">
+                <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+                    O ambiente da Barbearia Império foi cuidadosamente projetado para ser um refúgio masculino. Com uma decoração que combina elementos clássicos e contemporâneos, cadeiras confortáveis e uma atmosfera relaxante.
+                </p>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <i class="fas fa-camera text-6xl text-gold mb-4"></i>
+                    <p class="text-gray-500">Galeria de fotos em breve</p>
+                    <p class="text-sm text-gray-400 mt-2">Espaço reservado para futuras fotos do ambiente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="font-serif text-4xl font-bold text-center mb-12 text-charcoal">Contato</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-serif text-2xl font-bold mb-6 text-charcoal">Informações de Contato</h4>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <i class="fab fa-whatsapp text-2xl text-green-500"></i>
+                            <div>
+                                <p class="font-semibold">WhatsApp</p>
+                                <a href="https://wa.me/5511960668231" class="text-gold hover:text-dark-gold">(11) 9 6066-8231</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-gold"></i>
+                            <div>
+                                <p class="font-semibold">Endereço</p>
+                                <p>Av. Nossa Senhora dos Remédios, 333</p>
+                                <p>CEP 06298-010</p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Nossa+Senhora+dos+Rem%C3%A9dios,+333,+CEP+06298-010" target="_blank" class="text-gold hover:text-dark-gold text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Abrir no Google Maps
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-clock text-2xl text-gold"></i>
+                            <div>
+                                <p class="font-semibold">Horário de Funcionamento</p>
+                                <p>Terça a Sexta: 09:00 - 19:00</p>
+                                <p>Sábado: 09:00 - 17:00</p>
+                                <p>Domingo e Segunda: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map Placeholder -->
+                <div>
+                    <h4 class="font-serif text-2xl font-bold mb-6 text-charcoal">Localização</h4>
+                    <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-map text-4xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-500">Mapa em breve</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="agendamento" class="py-16 bg-charcoal text-white">
+        <div class="container mx-auto px-4">
+            <h3 class="font-serif text-4xl font-bold text-center mb-12 text-gold">Agendamento</h3>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-center text-lg mb-8">
+                    Agende seu horário e venha desfrutar da experiência Barbearia Império
+                </p>
+                
+                <form id="appointment-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Nome</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white focus:border-gold focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white focus:border-gold focus:outline-none">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="date" class="block text-sm font-medium mb-2">Data Preferida</label>
+                            <input type="date" id="date" name="date" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white focus:border-gold focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium mb-2">Serviço Desejado</label>
+                            <select id="service" name="service" required class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white focus:border-gold focus:outline-none">
+                                <option value="">Selecione um serviço</option>
+                                <option value="corte">Corte Masculino</option>
+                                <option value="barba">Barba</option>
+                                <option value="sobrancelha">Sobrancelha</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Mensagem (Opcional)</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white focus:border-gold focus:outline-none" placeholder="Detalhes adicionais sobre o serviço desejado..."></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="bg-gold hover:bg-dark-gold text-charcoal font-semibold py-3 px-8 rounded-lg transition-colors duration-300">
+                            Enviar Pedido de Agendamento
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="text-center mt-8">
+                    <p class="mb-4">Ou agende rapidamente via WhatsApp:</p>
+                    <a href="https://wa.me/5511960668231?text=Olá! Gostaria de agendar um horário na Barbearia Império." target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i>Agendar via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <img src="img/logo.jpg" alt="Barbearia Império" class="h-10 w-auto rounded">
+                    <div>
+                        <h5 class="font-serif text-lg font-bold text-gold">Barbearia Império</h5>
+                        <p class="text-sm">Marcelo Barber Cortes</p>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-sm">&copy; 2025 Barbearia Império. Todos os direitos reservados.</p>
+                    <p class="text-sm">Av. Nossa Senhora dos Remédios, 333 - CEP 06298-010</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/5511960668231" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

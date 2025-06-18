@@ -21,4 +21,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 A proposta desse projeto foi desenvolver uma amostra de um produto digital solicitado por um cliente.
 
-- [Acesse o projeto finalizado, online](https://jhonnytesstt.github.io/PORTIFOLIO/).
+- [Acesse o projeto finalizado, online](https://harleydeoliveira.github.io/barberImperio/).
